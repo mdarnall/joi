@@ -45,7 +45,7 @@
     "no-array-constructor": 1,
     "no-lonely-if":  1,
     "no-new-object": 1,
-    "space-unary-word-ops": 1,
+    "space-unary-ops": 1,
     "sort-vars": 1,
     "yoda": [1, "never"]
   }

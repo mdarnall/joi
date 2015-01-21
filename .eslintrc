@@ -9,41 +9,44 @@
     "quotes": [2, "single"], // https://github.com/hapijs/contrib/blob/master/Style.md#string-literals
     "func-style": [2, "expression"], // https://github.com/hapijs/contrib/blob/master/Style.md#function-declaration
     "no-underscore-dangle": 0, // explicitly off - https://github.com/hapijs/contrib/blob/master/Style.md#prototype-members
-    "no-unused-vars": 0, // lots of warnings, but not called out in styleguide
     "consistent-this": [2, "self"], // see https://github.com/hapijs/contrib/blob/master/Style.md#prototype-members
-    "strict": 0, // produces errors, probably a good idea
     "no-spaced-func": 2, // see https://github.com/hapijs/contrib/blob/master/Style.md#spaces
     "no-space-before-semi": 2, // https://github.com/hapijs/contrib/blob/master/Style.md#spaces
-    "no-trailing-spaces": 1, // not specfically called out in styleguide but seems inline with spacing thoughts there
-    "no-mixed-spaces-and-tabs": 2,
+    "no-mixed-spaces-and-tabs": 2, // see https://github.com/hapijs/contrib/blob/master/Style.md#whitespace
     "space-after-keywords": 2, // see https://github.com/hapijs/contrib/blob/master/Style.md#spaces
     "space-infix-ops": 2, // see https://github.com/hapijs/contrib/blob/master/Style.md#spaces
-    "space-return-throw-case": 2, // not mentioned in styleguide but probably a good convention
-    "no-use-before-define": 2, // not
-    "eqeqeq": 2, // not mentioned but a good idea
-    "no-eq-null": 1, // not mentioned but a good idea
+    "space-in-brackets": [1, "always", { // see https://github.com/hapijs/contrib/blob/master/Style.md#spaces but not complete
+      "singleValue": true,
+      "objectsInArrays": true,
+      "arraysInArrays": true
+    }],
     "curly": [2, "all"], // see https://github.com/hapijs/contrib/blob/master/Style.md#scope
-    "dot-notation": 1, // not mentioned but probably a good idea
-    "no-eval": 1, // not mentioned but a good idea (made a warning)
-    "no-else-return": 1, // not mentioned but a good idea (warning?)
-    "no-extend-native": 1, // not mentioned in styleguide. (warning?)
-    "no-return-assign": 1, // not in styleguide. seems like a good warning
-    "no-new-wrappers": 1, // not using not in styleguide seems like a good warning
-    "no-native-reassign": 2, // not in styleguide. seems like a good error
-    "no-constant-condition": 1, // not in styleguide. seems like a good warning
-    "no-comma-dangle": 1, // not in guide, seems like a good warning
-    "no-sparse-arrays": 2, // not in guide, but a good error
-    "no-ex-assign": 2, // not in guide, but seems like a good error
-    "new-parens": 1, // require () on new not documented in styleguide, prolly a good idea
-    "no-array-constructor": 1, // not documented in styleguide, prolly a good warn
-    "no-lonely-if":  1, // not in styleguide, prolly good warn
-    "no-new-object": 1 // same ^
 
-    // "never" works for [] , but not { }
-    //    "space-in-brackets": [1, "never"], // No space after [ and before ] in inlined arrays
-    //    "space-unary-word-ops": 2, // not mentioned in styleguide
-    //    "sort-vars": 1, // alpha sort vars - not in styleguide
-    //    "yoda": [1, "never"], // not in styleguide. dont know
-    // "eol-last" defaults to warning
+    "strict": 0, // not mentioned, what's the pref here?
+    // all others are not explicitly mentioned in styleguide but good suggestions. all are marked as warnings
+    "no-unused-vars": 1,
+    "no-trailing-spaces": 1,
+    "space-return-throw-case": 1,
+    "no-use-before-define": 1,
+    "eqeqeq": 1,
+    "no-eq-null": 1,
+    "dot-notation": 1,
+    "no-eval": 1,
+    "no-else-return": 1,
+    "no-extend-native": 1,
+    "no-return-assign": 1,
+    "no-new-wrappers": 1,
+    "no-native-reassign": 1,
+    "no-constant-condition": 1,
+    "no-comma-dangle": 1,
+    "no-sparse-arrays": 1,
+    "no-ex-assign": 1,
+    "new-parens": 1,
+    "no-array-constructor": 1,
+    "no-lonely-if":  1,
+    "no-new-object": 1,
+    "space-unary-word-ops": 1,
+    "sort-vars": 1,
+    "yoda": [1, "never"]
   }
 }
